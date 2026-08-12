@@ -7,8 +7,24 @@ public class UnrealTechLab : ModuleRules
 	public UnrealTechLab(ReadOnlyTargetRules Target) : base(Target)
 	{
 		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
+		
+		PublicIncludePaths.AddRange(new string[] { ModuleDirectory });
 	
-		PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "EnhancedInput", "UMG" });
+		PublicDependencyModuleNames.AddRange(new string[]
+		{
+			"Core", 
+			"CoreUObject", 
+			"Engine", 
+			"InputCore", 
+			"EnhancedInput", 
+			"UMG", 
+			"GameplayTags",
+			"GameplayAbilities",
+			"GameplayTasks",
+			"AIModule",
+			"NavigationSystem",
+			"Niagara",
+		});
 
 		PrivateDependencyModuleNames.AddRange(new string[] {  });
 

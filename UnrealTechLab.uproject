@@ -7,7 +7,14 @@
 		{
 			"Name": "UnrealTechLab",
 			"Type": "Runtime",
-			"LoadingPhase": "Default"
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"GameplayAbilities",
+				"UMG",
+				"AIModule",
+				"Engine",
+				"DeveloperSettings"
+			]
 		}
 	],
 	"Plugins": [
@@ -17,6 +24,18 @@
 			"TargetAllowList": [
 				"Editor"
 			]
+		},
+		{
+			"Name": "GameplayAbilities",
+			"Enabled": true
+		},
+		{
+			"Name": "EnhancedInput",
+			"Enabled": true
+		},
+		{
+			"Name": "Niagara",
+			"Enabled": true
 		}
 	]
 }
